@@ -1,0 +1,10 @@
+apiVersion: 1
+providers:
+  - name: Network Interconnect Lab
+    orgId: 1
+    folder: Network Lab
+    type: file
+    disableDeletion: false
+    editable: false
+    options:
+      path: /etc/grafana/provisioning/dashboard-json

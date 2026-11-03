@@ -1,0 +1,11 @@
+{
+  "targets": [
+    {"name": "local-monitor", "kind": "tcp", "address": "127.0.0.1:8080"},
+    {"name": "example-dns", "kind": "dns", "address": "example.com"}
+  ],
+  "routes": [
+    {"prefix": "203.0.113.0/24", "next_hop": "192.0.2.10", "local_pref": 200, "as_path": [64500, 64520], "med": 50, "origin": "igp"},
+    {"prefix": "203.0.113.0/24", "next_hop": "192.0.2.11", "local_pref": 150, "as_path": [64510], "med": 10, "origin": "igp"},
+    {"prefix": "203.0.113.0/24", "next_hop": "192.0.2.12", "local_pref": 200, "as_path": [64500], "med": 100, "origin": "igp"}
+  ]
+}

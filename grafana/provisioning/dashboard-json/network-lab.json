@@ -1,0 +1,8 @@
+{
+  "title":"Network Connectivity Lab", "uid":"network-lab", "schemaVersion":39, "version":1,
+  "time":{"from":"now-15m","to":"now"}, "refresh":"10s",
+  "panels":[
+    {"id":1,"title":"Probe health","type":"timeseries","gridPos":{"x":0,"y":0,"w":12,"h":8},"datasource":{"type":"prometheus","uid":"${DS_PROMETHEUS}"},"targets":[{"expr":"network_probe_success","refId":"A"}]},
+    {"id":2,"title":"Probe latency (seconds)","type":"timeseries","gridPos":{"x":12,"y":0,"w":12,"h":8},"datasource":{"type":"prometheus","uid":"${DS_PROMETHEUS}"},"targets":[{"expr":"network_probe_duration_seconds","refId":"A"}]}
+  ]
+}
